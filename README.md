@@ -1,18 +1,43 @@
-# chromedriver cookbook
+[![Build Status](https://travis-ci.org/RallySoftware-cookbooks/chromedriver.png?branch=master)](https://travis-ci.org/RallySoftware-cookbooks/chromedriver)
 
-# Requirements
+Description
+===========
+Installs the chromedriver binary.
 
-# Usage
+Requirements
+============
 
-# Attributes
+Platform
+--------
+Tested on CentOS 6.4 and Ubuntu 12.04.  May support other operating systems that support the use of ark.
 
-# Recipes
+Other
+-----
 
-# Author
+Requires the RallySoftware-cookbooks/ark cookbook
 
-Author:: Rally Software Development Corp (<rteabeault@rallydev.com>)
+Attributes
+==========
+See `attributes/default.rb` for default values
 
-# License
+* `node['chromedriver']['version']` - Specifies the version of chromedriver to install
+* `node['chromedriver']['archive_name']` - Name of zip to download
+* `node['chromedriver']['source_url']` - Specifies full URL to download archive
+* `node['chromedriver']['path']` - Path to use for installation
+* `node['chromedriver']['owner']` - Owner of the installed binary
+* `node['chromedriver']['group']` - Group of the installed binary
+* `node['chromedriver']['mode']` - Mode of the installed binary
 
-Copyright (C) 2013 Rally Software Development Corp
+Recipes
+=======
+
+default
+-------
+
+Installs the chromedriver binary.
+
+License
+=======
+
+Copyright (c) Rally Software Development Corp. 2013
 Distributed under the MIT License.
