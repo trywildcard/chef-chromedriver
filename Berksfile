@@ -2,4 +2,4 @@ site :opscode
 
 metadata
 
-cookbook 'ark', :github => 'RallySoftware-cookbooks/ark'
+cookbook 'ark', "0.2.3"
