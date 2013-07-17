@@ -32,6 +32,6 @@ ark 'chromedriver' do
   owner node['chromedriver']['owner']
   group node['chromedriver']['group']
   path node['chromedriver']['path']
-  creates 'chromedriver'
-  action :cherry_pick
+  has_binaries ['chromedriver']
+  action :install
 end
