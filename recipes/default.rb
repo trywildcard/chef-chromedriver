@@ -33,6 +33,6 @@ ark 'chromedriver' do
   group node['chromedriver']['group']
   mode node['chromedriver']['mode']
   path node['chromedriver']['path']
-  file 'chromedriver'
+  creates 'chromedriver'
   action :cherry_pick
 end
