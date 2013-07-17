@@ -37,6 +37,6 @@ ark 'chromedriver' do
 end
 
 file '/usr/local/chromedriver/chromedriver' do
-  mode '755'
+  mode node['chromedriver']['mode']
 end
 
