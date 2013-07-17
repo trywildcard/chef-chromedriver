@@ -31,7 +31,6 @@ ark 'chromedriver' do
   version node['chromedriver']['version']
   owner node['chromedriver']['owner']
   group node['chromedriver']['group']
-  mode node['chromedriver']['mode']
   path node['chromedriver']['path']
   creates 'chromedriver'
   action :cherry_pick
