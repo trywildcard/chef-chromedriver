@@ -31,8 +31,12 @@ ark 'chromedriver' do
   version node['chromedriver']['version']
   owner node['chromedriver']['owner']
   group node['chromedriver']['group']
-  mode node['chromedriver']['mode']
-  path node['chromedriver']['path']
-  creates 'chromedriver'
-  action :cherry_pick
+  has_binaries ['chromedriver']
+  strip_leading_dir false
+  action :install
 end
+
+file '/usr/local/chromedriver/chromedriver' do
+  mode '755'
+end
+
