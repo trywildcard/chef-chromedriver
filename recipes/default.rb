@@ -33,5 +33,6 @@ ark 'chromedriver' do
   group node['chromedriver']['group']
   path node['chromedriver']['path']
   has_binaries ['chromedriver']
+  strip_leading_dir false
   action :install
 end
