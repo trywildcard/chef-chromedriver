@@ -36,7 +36,7 @@ ark 'chromedriver' do
   action :install
 end
 
-file '/usr/local/chromedriver/chromedirver' do
+file '/usr/local/chromedriver/chromedriver' do
   mode '755'
 end
 
